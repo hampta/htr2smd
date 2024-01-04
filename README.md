@@ -1,8 +1,8 @@
 # The Motion Analysis HTR to SMD Converter
 
 <div align="center">
-    <img src="https://github.com/hampta/htr2smd/assets/screenshot.png" alt="Screenshot" width="100%">
-    <img src="https://github.com/hampta/htr2smd/assets/screenshot_01.png" alt="Screenshot" width="100%">
+    <img src="https://github.com/hampta/htr2smd/blob/main/assets/screenshot.png?raw=true" alt="Screenshot" width="100%">
+    <img src="https://github.com/hampta/htr2smd/blob/main/assets/screensho_01.png?raw=true" alt="Screenshot" width="100%">
 </div>
 
 ## Introduction
@@ -10,7 +10,7 @@
 
 It is a sequence of hierarchical transformations, each of which is a 3D translation followed by a 3D rotation. 
 
-The HTR format is used by [Cryengine](https://www.cryengine.com/). 
+The HTR format is used by [Cryengine](https://www.cryengine.com/).
 
 This tool converts HTR files to the [SMD](https://developer.valvesoftware.com/wiki/Studiomdl_Data) format used by the [Source Engine](https://developer.valvesoftware.com/wiki/Source_Engine).
 
@@ -25,7 +25,7 @@ python htr2smd.py <input_htr_file> <input_htr_file> <input_htr_file>
 python htr2smd.py <input_htr_folder> <input_htr_folder> <input_htr_folder>
 ```
 ### From compiled binary
-Download the executable from releases - [htr2smd](https://github.com/hampta/htr2smd/releases/download/latest)
+Download the executable from releases - [htr2smd](https://github.com/hampta/htr2smd/releases/latest)
 ```bash
 ./htr2smd.exe <input_htr_file>
 ./htr2smd.exe <input_htr_folder>
