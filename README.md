@@ -1,8 +1,8 @@
 # The Motion Analysis HTR to SMD Converter
 
 <div align="center">
-    <img src="https://github.com/hampta/htr2smd/blob/main/assets/screenshot.png?raw=true" alt="Screenshot" width="100%">
-    <img src="https://github.com/hampta/htr2smd/blob/main/assets/screensho_01.png?raw=true" alt="Screenshot" width="100%">
+    <img src="https://github.com/hampta/htr2smd/blob/main/assets/screenshot.png?raw=true" alt="Screenshot" width="25%">
+    <img src="https://github.com/hampta/htr2smd/blob/main/assets/screenshot_01.png?raw=true" alt="Screenshot" width="25%">
 </div>
 
 ## Introduction
