@@ -214,14 +214,16 @@ def convert(file_name="animation.htr"):
     # write bone hierarchy
     bone_hierarchy = smd_bone_hierarchy(htr)
     for bone in bone_hierarchy:
-        smd += f"{bone}\n"
+        # smd += f"{bone}\n"
+        smd += bone + "\n"
     smd += "end\n"
 
     # write skeleton animation
     smd += "skeleton\n"
 
     for i in range(htr.num_frames):
-        smd += f"time {i}\n"
+        # smd += f"time {i}\n"
+        smd += "time " + str(i) + "\n"
         for bone_frames in htr.frames:
             frame = bone_frames.list[i]
             Tx, Ty, Tz = htr.apply_scale(bone_frames.bone_id, frame.Tx, frame.Ty, frame.Tz)
@@ -233,7 +235,15 @@ def convert(file_name="animation.htr"):
                 Tx, Ty, Rz = fix_rotation(Tx, Ty, Rz)
                 
             # write bone position
-            smd += f"{bone_frames.bone_id} {Tx:.6f} {Ty:.6f} {Tz:.6f} {Rx:.6f} {Ry:.6f} {Rz:.6f}\n"
+            smd += f"{bone_frames.bone_id} {Tx:.6g} {Ty:.6g} {Tz:.6g} {Rx:.6g} {Ry:.6g} {Rz:.6g}\n"
+            # Tx = round(Tx, 6)
+            # Ty = round(Ty, 6)
+            # Tz = round(Tz, 6)
+            # Rx = round(Rx, 6)
+            # Ry = round(Ry, 6)
+            # Rz = round(Rz, 6)
+            
+            # smd += str(bone_frames.bone_id) + " " + str(Tx) + " " + str(Ty) + " " + str(Tz) + " " + str(Rx) + " " + str(Ry) + " " + str(Rz) + "\n"
 
     smd += "end\n"
 
